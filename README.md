@@ -1,6 +1,6 @@
 # MageArena
 
-Tugas Besar Matakuliah Pemograman Berorientasi Object (membuat game).
+Tugas Besar Matakuliah Pemrograman Berorientasi Object (membuat game).
 
 Implementasi saat ini adalah game turn-based sederhana berbasis terminal untuk menunjukkan konsep OOP:
 - Encapsulation (atribut private/protected + method publik)

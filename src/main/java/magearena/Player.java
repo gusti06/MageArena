@@ -1,16 +1,12 @@
 package magearena;
 
 public class Player extends Character {
+    private static final int MAX_MANA = 30;
     private int mana;
 
     public Player(String name) {
         super(name, 100, 12);
-        this.mana = 30;
-    }
-
-    @Override
-    public int attack(Character target) {
-        return super.attack(target);
+        this.mana = MAX_MANA;
     }
 
     public int getMana() {
@@ -30,7 +26,7 @@ public class Player extends Character {
 
     public void recoverMana(int amount) {
         if (amount > 0) {
-            mana += amount;
+            mana = Math.min(MAX_MANA, mana + amount);
         }
     }
 }
